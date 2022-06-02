@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-cyan-600">
+    <nav class="bg-white py-2 px-3 md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] mx-3 cursor-pointer">
+          <img
+            class="h-10 inline"
+            src="https://i.pinimg.com/736x/de/a0/f3/dea0f3b7f480b1151c08db4a402a43b9.jpg"
+            alt=""
+          />
+          tailwind
+
+        </span>
+        <span class="text-3xl md:hidden h-10 cursor-pointer">
+            <ion-icon name="menu"  onclick="Menu(this)"></ion-icon>
+        </span>
+
+
+      </div>
+  
+     
+          <ul class="md:flex  md:items-center bg-white z-[-1] rounded absolute pl-7 md:pl-0 transition-all ease-in  duration-50   md:z-auto md:justify-between md:w-auto   w-full  top-[-400px]   md:static left-0   ">
+            
+              <li class="mx-4 my-2 md:my-0">
+                  <a href="" class="text-xl hover:text-cyan-500">Home</a>
+                </li>
+        <li class="mx-4 my-2 md:my0">
+            <a href="" class="text-xl hover:text-cyan-500">About</a>
+        </li>
+        <li class="mx-4 my-2 md:my0">
+            <a href="" class="text-xl hover:text-cyan-500">Service</a>
+        </li>
+        <li class="mx-4 my-2 md:my0">
+            <a href="" class="text-xl hover:text-cyan-500">Demo</a>
+        </li>
+        <button class="bg-cyan-400 font-[Poppins] mx-3 rounded px-2 py-2 my-2 md:my-0 text-white hover:text-white hover:bg-cyan-600 duration-75">
+            Get Started
+        </button>
+    </ul>
+
+    </nav>
+
+    <script>
+
+        function Menu(e){
+            let list=document.querySelector('ul');
+            e.name==="menu"?(e.name="close",list.classList.add('top-[55px]'),list.classList.add('opacity-100'))
+            
+            :(e.name="menu",list.classList.remove('top-[55px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+  </body>
+</html>
